@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Details | Student Registration Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="toast"><span id="toast-msg"></span><button id="toast-close">&times;</button></div>
+
+  <header>
+    <div class="logo">
+      <div class="logo-icon"></div>
+      <span class="logo-text">Student Portal</span>
+    </div>
+    <div class="nav">
+      <img id="user-avatar" alt="avatar" />
+      <span id="user-name"></span>
+      <button id="signout-btn">Sign out</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="card">
+      <h1>Student Details</h1>
+      <p class="sub">Please fill in your details to complete registration.</p>
+
+      <form id="student-form">
+        <div>
+          <label for="studentName">Student Name</label>
+          <input type="text" id="studentName" name="studentName" required placeholder="AAKASH" />
+        </div>
+        <div>
+          <label for="collegeName">College Name</label>
+          <input type="text" id="collegeName" name="collegeName" required placeholder="Dhanalakshmi Srinivasan College of Engineering" />
+        </div>
+        <div>
+          <label for="regNo">Registration Number</label>
+          <input type="text" id="regNo" name="regNo" required placeholder="e.g. 310525104001" />
+        </div>
+        <div>
+          <label for="collegeId">College ID Number</label>
+          <input type="text" id="collegeId" name="collegeId" required placeholder="001" />
+          <p class="hint">Enter your College ID card number.</p>
+        </div>
+
+        <div id="form-error"></div>
+        <button type="submit" id="submit-btn" class="btn-primary">Submit</button>
+      </form>
+    </div>
+  </main>
+
+  <script type="module" src="form.js"></script>
+</body>
+</html>
